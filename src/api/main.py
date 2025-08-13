@@ -40,7 +40,7 @@ Instrumentator().instrument(app).expose(app)
 
 # Start Prometheus metrics server on port 9100 in a background thread
 def start_metrics_server():
-start_http_server(9100)
+  start_http_server(9100)
 
 # Health check endpoint
 @app.get("/health", response_model=dict)
