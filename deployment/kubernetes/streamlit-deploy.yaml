@@ -19,6 +19,7 @@ spec:
     spec:
       containers:
       - image: claudiualbudockerhub/streamlit:latest
+        pullPolicy: Always
         name: streamlit
         ports:
         - containerPort: 8501
